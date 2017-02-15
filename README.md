@@ -31,3 +31,5 @@
 # Inside the burger directory, create a folder named db.
 # Create schema.sql and seed.sql and inside schema.sql create datatbase: burgers_db and table 'burgers':Use mySql workbench
 # Run the schema.sql and seeds.sql files into the mysql server from the command line
+## Config Setup
+# Create a folder named config. inside your burger directory
