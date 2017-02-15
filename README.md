@@ -42,6 +42,8 @@
 # Create the code that will call the ORM functions using burger specific input for the ORM.
 # Export burger.js
 
-## Controler Setup
-# Create burgers_controller folder under burger directory
+## Controller Setup
+# Create controllers folder 
+# Create burgers_controller.js under the controllers folder
+# In burgers-controller.js import express and burger.js
 
