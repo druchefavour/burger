@@ -35,3 +35,13 @@
 # Create a folder named config. inside your burger directory
 # Create files connection.js and orm.js and populate these files. 
 # Populate orm.js to select, create and update the database 
+
+## Model Setup
+# Create burger.js in models directory
+# Import orm.js into burger.js
+# Create the code that will call the ORM functions using burger specific input for the ORM.
+# Export burger.js
+
+## Controler Setup
+# Create burgers_controller folder under burger directory
+
