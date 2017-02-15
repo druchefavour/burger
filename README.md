@@ -45,5 +45,12 @@
 ## Controller Setup
 # Create controllers folder 
 # Create burgers_controller.js under the controllers folder
-# In burgers-controller.js import express and burger.js
+# In burgers_controller.js import express and burger.js
+# Populate burgers_controller.js and export router to server.js
+
+## View Setup
+# Created a folder named views inside the burger directory.
+# Created the index.handlebars file inside views directory
+# Create the layouts directory inside views directory.
+# Create the main.handlebars file inside layouts directory
 

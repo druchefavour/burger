@@ -1,0 +1,31 @@
+<h1> Eat-Da-Burger! APP </h1>
+
+<p> Manage burgers with this app </p>
+
+<!-- Pass in data from server.js -->
+
+<ul>
+  {{#each quotes}}
+  	<li>
+  		<p><span class="label">ID:</span> {{this.id}}</p>
+        <p><span class="label">Burger_Name:</span> {{this.burger_name}}</p>
+        <form action="/{{this.id}}?_method=DELETE" method="POST">
+           <input type="hidden" name="id" value="{{this.id}}">
+           <button type="submit">Devour</button>
+        </form>
+
+        <a href="/{{this.id}}">Update this burger</a>
+  	</li>
+  {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
+
+<form class="create-form" action="/" method="POST">
+
+  <div class="form-group">
+    <label for="burg">Burger:</label>
+    <input type="text" id="burg" name="burger_name">
+  </div>
+  <button type="submit">Add Burger</button>
+</form>
