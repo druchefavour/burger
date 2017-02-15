@@ -33,3 +33,5 @@
 # Run the schema.sql and seeds.sql files into the mysql server from the command line
 ## Config Setup
 # Create a folder named config. inside your burger directory
+# Create files connection.js and orm.js and populate these files. 
+# Populate orm.js to select, create and update the database 
