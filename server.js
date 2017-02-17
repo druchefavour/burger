@@ -5,7 +5,7 @@
 		
 var express = require("express");
 var bodyParser = require("body-parser");
-var methodOveride = require("method-override");
+var methodOverride = require("method-override");
 
 var app = express();
 var port = 3000;
@@ -28,4 +28,12 @@ app.set("view engine", "handlebars");
 
 var mysql = require("mysql");
 
+// Import routes and give the server access to them.
+var routes = require("./controllers/burgers_controller.js");
 
+app.use("/", routes);
+
+// Listen for response and log a message to the user upon success
+app.listen(port, function() {
+	console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", port, port); 
+});;
