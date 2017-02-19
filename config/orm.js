@@ -62,11 +62,11 @@ var orm = {
 
 	// An example of objColVals would be {burger_name: cheese_burger, devoured: true}
 	update: function (table, objColVals, condition, cb) {
-		var queryString = "UPDATE" + table;
+		var queryString = "UPDATE " + table;
 
-		queryString += "SET";
+		queryString += " SET ";
 		queryString += objToSql(objColVals);
-		queryString += "WHERE";
+		queryString += " WHERE ";
 		queryString += condition;
 
 		console.log (queryString);
